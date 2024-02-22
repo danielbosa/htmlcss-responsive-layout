@@ -1,0 +1,252 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+body{
+    font-family: "PT Sans", sans-serif;
+    scroll-behavior: smooth;
+    line-height: 2em;
+    font-size: 1.2em;
+    background-color: white;
+}
+
+:root {
+	--color-nav: #0084fd;
+	--color-light-blue: #b5ddff;
+	--color-purple: #9792e4;
+	--color-footer: #333333;
+	--color-free: #fbc25f;
+}
+
+/*****************/
+/* debug */
+
+.debug-1{
+    border: 2px solid red;
+}
+
+.debug-2{
+    border: 2px solid blue;
+}
+
+/******************/
+/* container */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*******/
+/* header */
+header{
+    background-color: var(--color-nav);
+}
+
+/****main****/
+
+section{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+section.even{
+    background-color: var(--color-purple);
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3{
+    font-size: 1.8em;
+}
+
+/* demo */
+
+.card-1{
+    border-radius: 30px;
+    margin: 30px 0;
+    padding: 2.5em 2em;
+}
+
+.card-1 h3,
+.card-1 p,
+.card-1 div{
+    padding-bottom: 30px;
+}
+
+#demo .container>.card-1,
+#demo .card-1 div:last-child{
+    padding-bottom: 0;
+}
+
+.card-1 i:not(.fa-apple){
+    font-size: 5em;
+}
+
+.card-1 h3,
+.card-1 i:not(.fa-apple){
+    color: var(--color-nav);
+}
+
+/* strategic planning*/
+
+.no-card{
+    margin: 30px 0;
+    padding: 2.5em 2em;
+}
+
+.card-2{
+    border-radius: 40px;
+    margin-bottom: 30px;
+    padding: 2.5em 1.5em;
+}
+
+.card-2 h3,
+.card-2 p,
+/*.card-2 div,
+.card-2 div:not(div:last-of-type),
+.card-2:not(.photo), */
+.card-2 blockquote{
+    padding-bottom: 20px;
+}
+
+/* testimonials */
+
+.photo{
+    width: 50%;
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+blockquote:before {
+    content: open-quote;
+}
+  
+blockquote:after {
+    content: close-quote;
+}
+
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 4em;
+  top: .2em;
+  position: relative;
+}
+
+/* benefits */
+.card-3{
+    width: 100%;
+    border-radius: 30px;
+    margin: 4em 0;
+    padding: 3.5em 2em;
+}
+
+.card-3 h3,
+.card-3 div{
+    color: var(--color-purple);
+}
+
+.number{
+    font-size: 4em;
+}
+
+.card-3 h3,
+.card-3 .number,
+.card-3 p{
+    padding-bottom: 1em;
+}
+
+/*************/
+/***utility***/
+
+/* padding */
+
+.pd-b-20{
+    padding-bottom: 20px;
+}
+
+.pd-b-40{
+    padding-bottom: 40px;
+}
+
+.pd-b-60{
+    padding-bottom: 60px;
+}
+
+.mg-b-40{
+    margin-bottom: 40px;
+}
+
+/* txt */
+.txt-center{
+    text-align: center;
+}
+
+/* color */
+.color-nav{
+    background-color: var(--color-nav);
+}
+
+.color-contrast{
+    color: white;
+}
+
+.color-2{
+    color: var(--color-purple);
+}
+
+.bg-1{
+    background-color: var(--color-light-blue);
+}
+
+.bg-2{
+    background-color: var(--color-purple);
+}
+
+.bg-3{
+    background-color: white;
+}
+
+/*** btn ***/
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+}
+
+#demo .btn{
+    padding: 6px 100px;
+    color: white;
+}
+
+.btn-2{
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+}
