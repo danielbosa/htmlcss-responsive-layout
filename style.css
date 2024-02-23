@@ -139,16 +139,16 @@ h3{
     object-fit: cover;
 }
 
-blockquote:before {
+#testimonials blockquote:before {
     content: open-quote;
 }
   
-blockquote:after {
+#testimonials blockquote:after {
     content: close-quote;
 }
 
-blockquote:before,
-blockquote:after {
+#testimonials blockquote:before,
+#testimonials blockquote:after {
   display: inline-block;
   vertical-align: bottom;
   font-size: 4em;
@@ -157,15 +157,19 @@ blockquote:after {
 }
 
 /* benefits */
+#benefits h2{
+    padding-bottom: 1em;
+}
+
 .card-3{
     width: 100%;
     border-radius: 30px;
-    margin: 4em 0;
-    padding: 3.5em 2em;
+    margin: 2em 0 2em 0;
+    padding: 3.5em 2em 2.5em 2em;
 }
 
 .card-3 h3,
-.card-3 div{
+.card-3 div:not(.btn){
     color: var(--color-purple);
 }
 
@@ -179,8 +183,46 @@ blockquote:after {
     padding-bottom: 1em;
 }
 
+/* about */
+#about h2{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+#about p{
+    padding-bottom: 2.5em;
+}
+
+#about .photo{
+    margin: 0%;
+}
+
+#about blockquote{
+    color: var(--color-purple);
+    font-weight: 900;
+    font-size: 1.7em;
+    line-height: 1.5em;
+    padding-top: 30px;
+}
+
+#about blockquote:before {
+    content: open-quote;
+    display: inline-block;
+    /* vertical-align: bottom; */
+    font-size: 6em;
+    position: absolute;
+    top: -150px;
+    left: 160px;
+}
+
 /*************/
 /***utility***/
+
+/* position */
+.p-rel{
+    position: relative;
+}
+
 
 /* padding */
 
@@ -203,6 +245,10 @@ blockquote:after {
 /* txt */
 .txt-center{
     text-align: center;
+}
+
+.txt-upper{
+    text-transform: uppercase;
 }
 
 /* color */
@@ -249,4 +295,15 @@ blockquote:after {
     line-height: 2.5em;
     border-radius: 50%;
     background-color: var(--color-purple);
+}
+
+#benefits .btn{
+    padding: 6px 75px;
+    color: white;
+    margin-top: 10px;
+}
+
+#about .btn{
+    padding: 0px 12px;
+    margin-top: 30px;
 }
