@@ -153,7 +153,7 @@ h3{
 .card-2{
     border-radius: 40px;
     margin-bottom: 30px;
-    padding: 2.5em 1.5em;
+    padding: 2.5em 2em;
 }
 
 .card-2 h3,
@@ -439,7 +439,7 @@ footer{
     #demo .container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 30px;
         margin-top: 30px;
         margin-bottom: 40px;
@@ -447,6 +447,7 @@ footer{
 
     .card-1.card-cta{
         width: calc((100% / 3) * 2);
+        position: relative;
     }
 
     .card-1{
@@ -463,6 +464,8 @@ footer{
     .img-demo{
         width: 60%;
         margin: 0 0;
+        position: absolute;
+        bottom: 0;
     }
 
     /* strategic planning */
@@ -470,8 +473,6 @@ footer{
     #strategic-planning .btn-2{
         text-align: center;
     }
-
-
 
     /* testimonials section */
 
@@ -522,7 +523,12 @@ footer{
         width: 100%;
     }
 
-        /* cta */
+    #about blockquote:before {
+        font-size: 4em;
+        left: 100px;
+    }
+
+    /* cta */
 
     #cta p{
         width: 70%;
@@ -534,4 +540,74 @@ footer{
     footer .container{
         width: 60%;
     }
+}
+
+@media screen and (min-width: 992px){
+
+    .container{
+        max-width: 992px;
+        margin: auto;
+    }
+
+    /* *{
+        font-size: medium;
+    } */
+
+    /* demo section */
+    
+    .card-1.card-cta{
+        width: calc((100% / 3) * 2);
+        position: static;
+        display: flex;
+    }
+
+    .img-demo{
+        position: static;
+        align-self: self-end;
+    }
+
+    /* strategic planning section */
+
+    #strategic-planning .container{
+        display: flex;
+        gap: 40px;
+    }
+
+    .half-left, .half-right{
+        width: 50%;
+    }
+
+    .half-right{
+        align-self: flex-end;
+    }
+
+    /* benefits */
+
+    #benefits .card-3{
+        width: calc(100% / 3 - 30px);
+        margin: 0;
+    }
+
+    /* cta */
+
+    #cta p{
+            width: 70%;
+            text-align: center;
+    }
+
+    #cta p{
+        width: 50%;
+    }
+
+    #cta .btn{
+        width: 30%;
+    }
+    
+    /* footer */
+    
+    footer div{
+        width: 50%;
+        margin: 0 auto;
+    }
+
 }
